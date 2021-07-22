@@ -49,16 +49,31 @@
 					<h2 class="second_title__description">Cadastre seu e-mail para receber promoções:</h2>
 					<p class="second_title__description"><form method="post" /> 
 						<input class="input" name="email" type="email" id="email" required="" placeholder="Digite seu Email" />
+						<input class="input" name="text1" type="text" id="text1" required="" placeholder="Primeiro item" />
+						<input class="input" name="text2" type="text" id="text2" required="" placeholder="Segundo item" />
+						<input class="input" name="text3" type="text" id="text3" required="" placeholder="Terceiro item" />
+
+						
+						
 						</form>
 						
 						<button class="button" onclick="store()" type="button">CADASTRAR</button>
-						
 						
 						
 						<script  type="text/javascript">
 						  function store(){
 							 var inputEmail= document.getElementById("email");
 							 localStorage.setItem("email", inputEmail.value);
+
+							 var inputItem1= document.getElementById("text1");
+							 localStorage.setItem("text1", inputItem1.value);
+
+							 var inputItem1= document.getElementById("text2");
+							 localStorage.setItem("text2", inputItem1.value);
+
+							 var inputItem1= document.getElementById("text3");
+							 localStorage.setItem("text3", inputItem1.value);
+
 							}
 						</script></p>
 				</div>
